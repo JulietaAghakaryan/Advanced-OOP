@@ -1,0 +1,33 @@
+package com.company;
+
+public class Mean {
+
+    public void meancount( int a,  int[][] array){
+
+System.out.println();
+        int sumofi=0;
+        int sumofj=0;
+        int count=0;
+        for (int i = 0; i < array.length; i++) {
+        for (int j = 0; j < array[i].length; j++) {
+
+            if (array[i][j] == a) {
+                sumofi += i;
+                sumofj += j;
+                count++;
+            }
+        }}
+
+        for (int i = 0; i < array.length; i++) {
+        for (int j = 0; j < array[i].length; j++)
+            System.out.print(array[i][j] + " ");
+        System.out.println();
+
+    }
+        double meanofi = sumofi  / count;
+        double meanofj=sumofj/count;
+        System.out.print("mean of x is " + (int) meanofi + " and mean of y is " + (int) meanofj);
+
+
+
+    }}
